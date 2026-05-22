@@ -1,8 +1,6 @@
 """testing calc function"""
 import pytest
 from app import add
-
-
 def test_add_positive():
     """test for positive"""
     assert add(2, 3) == 5
@@ -14,7 +12,6 @@ def test_add_negative():
 def test_add_zero():
     """test for zero"""
     assert add(0, 0) == 0
-
 
 @pytest.mark.parametrize(
     "a,b,result",
